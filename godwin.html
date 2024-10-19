@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+
+        h1:hover {
+            color: #007BFF;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s; 
+        }
+
+        .skill:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, transform 0.3s; 
+        }
+
+        .section:hover {
+            background-color: #e9e9e9; 
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px; 
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0; 
+        }
+
+        @media (max-width: 600px) {
+          h1 { font-size: 28px; }
+          h2 { font-size: 24px; }
+          .skills { flex-direction: column; }
+          .skill { width: fit-content; }
+          .container { padding-left:10px; padding-right :10px;}
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titus Godwin</h1>
+        <p>Email: <a href="mailto:titusgodwin@karunya.edu.in" style="color:#fff;">titusgodwin@karunya.edu.in</a></p>
+        <p>Location: Coimbatore</p>
+    </header>
+    
+    <div class="container">
+        
+        <section class="section" aria-labelledby="about-me">
+            <h2 id="about-me">About Me</h2>
+            <p>I am a dedicated and detail-oriented second-year B.Tech student pursuing a course in Artificial Intelligence and Data Science. I am passionate about web development and continuously seek opportunities to learn and grow in the tech industry.</p>
+        </section>
+
+        <section class="section" aria-labelledby="skills">
+            <h2 id="skills">Skills</h2>
+            <div class="skills">
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Web Development</span>
+                <!-- Add more skills as needed -->
+             </div>
+         </section>
+
+         <section class="section" aria-labelledby="projects">
+             <h2 id="projects">Projects</h2>
+             <ul>
+                 <li><strong>Personal Portfolio Website:</strong> Developed a responsive portfolio website to showcase my projects and skills using HTML, CSS, and JavaScript.</li>
+                 <li><strong>Weather App:</strong> Created a weather application using React and OpenWeather API to display real-time weather data.</li>
+                 <!-- Add more projects as needed -->
+             </ul>
+         </section>
+
+         <section class="section" aria-labelledby="experience">
+             <h2 id="experience">Experience</h2>
+             <p><strong>Intern:</strong> Karunya University (May 2023 - Present)</p>
+             <!-- Add more experience details as needed -->
+         </section>
+
+     </div>
+
+     <footer>
+         <p>&copy; <?php echo date("Y"); ?> Titus Godwin. All rights reserved.</p>
+     </footer>
+
+ </body>
+ </html>
